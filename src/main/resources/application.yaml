@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: business-intelligence
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/business_intelligence
+    username: root
+    password: Grvregmi@5274
+    driver-class-name: com.mysql.cj.jdbc.Driver # Example for MySQL
+  jpa:
+    hibernate:
+      ddl-auto: update # Options: none, update, create, create-drop, validate
+    show-sql: true # Prints SQL queries to the console
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect # Example for MySQL
+
+  jackson:
+    default-property-inclusion: non_null
+
+app:
+  jwt:
+    secret-key: Rvs5dujjpLLUukcjGM5zqlZ6WfE1S5tR06A8LQfYQzW
+    expiration-time: 3600000
