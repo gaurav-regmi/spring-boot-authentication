@@ -3,5 +3,5 @@ Developed a secure authentication and authorization system using Spring Boot and
 
 Add roles first after running the project:
 
-INSERT INTO business_intelligence.roles (id, name) VALUES (1, 'USER');
-INSERT INTO business_intelligence.roles (id, name) VALUES (2, 'ADMIN');
+INSERT INTO roles (id, name) VALUES (1, 'USER');
+INSERT INTO roles (id, name) VALUES (2, 'ADMIN');
